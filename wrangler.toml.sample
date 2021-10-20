@@ -1,0 +1,17 @@
+name = "metaflow-service"
+type = "javascript"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+compatibility_date = "2021-10-11"
+
+kv_namespaces = [ 
+	{ binding = "METAFLOW", preview_id = "00000000000000000000000000000000", id = "00000000000000000000000000000000" }
+]
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
